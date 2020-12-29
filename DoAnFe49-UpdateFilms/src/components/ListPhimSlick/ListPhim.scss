@@ -1,0 +1,158 @@
+// Slide Arrow
+.slick-slider {
+  padding: 0px 150px;
+  .slick-prev {
+    position: absolute;
+    top: 40%;
+    left: 7% !important;
+    z-index: 0;
+    z-index: 100;
+    &:before {
+      content: none;
+    }
+
+    .prevArrow {
+      position: relative;
+      color: whitesmoke;
+      opacity: 0.5;
+      font-size: 50px;
+      transition: all 0.5s;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .slick-next {
+    position: absolute;
+    top: 40%;
+    right: 9% !important;
+    z-index: 0;
+
+    &:before {
+      content: none;
+    }
+    .nextArrow {
+      color: whitesmoke;
+      opacity: 0.5;
+
+      font-size: 50px;
+      z-index: 999;
+      transition: all 0.5s;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+// Card-ListPhim
+.listPhim_Card {
+  .card {
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0) !important;
+    position: relative;
+    border-radius: 12px;
+    color: white;
+    &:hover {
+      cursor: pointer;
+      .card-body {
+        .card-title + .card-text {
+          opacity: 0;
+        }
+        .Button {
+          opacity: 1;
+        }
+      }
+      .card-top {
+        .ListPhim_Over {
+          transform: skewX(30deg) translateX(-20%);
+        }
+        .ListPhim_Trailer {
+          opacity: 1;
+        }
+      }
+    }
+    .card-top {
+      position: relative;
+      .ListPhim_Trailer {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        font-size: 30px;
+        border: 3px solid white;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        opacity: 0;
+        transform: scale(1.1);
+        transition: all 1s;
+        z-index: 10;
+        &:hover {
+          transform: scale(1);
+        }
+        &:focus {
+          outline: none !important  ;
+        }
+        i {
+          line-height: 1.7;
+          color: white;
+          margin-left: 10%;
+        }
+      }
+      .ListPhim_Over {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 200%;
+        height: 100%;
+        background: linear-gradient(to bottom, #fbbd61, #ec7532);
+        opacity: 0.4;
+        transform: skewX(30deg) translateX(-130%);
+        transition: all 0.5s;
+      }
+      .card-img-top {
+        border-radius: 10px;
+      }
+    }
+
+    .card-body {
+      background-color: rgba(255, 255, 255, 0) !important;
+      position: relative;
+      .BuyTicket {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        background-color: #fb4226;
+        border: 1px solid #fb4226;
+        border-radius: 5px;
+        height: 50px;
+        width: 90%;
+        color: white;
+        font-size: 22px;
+        opacity: 0;
+        transition: all 0.5s;
+        text-decoration: none !important;
+        text-align: center;
+        &:focus {
+          outline: none;
+        }
+        span {
+          line-height: 2;
+        }
+      }
+      .card-title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .card-text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+}

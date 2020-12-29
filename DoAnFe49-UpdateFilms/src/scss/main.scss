@@ -1,0 +1,10 @@
+@import "./base/reset";
+@import "./components/footer";
+// @import './helpers/helper-dir'
+
+//Component
+
+@import ".././components/ListPhimSlick/ListPhim.scss";
+
+// Page
+@import "../pages/Detail/BuyTicket.scss";

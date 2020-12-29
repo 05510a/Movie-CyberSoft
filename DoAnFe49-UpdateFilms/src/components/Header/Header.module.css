@@ -1,0 +1,26 @@
+.Infomation:hover {
+  color: red !important;
+  cursor: pointer !important;
+  font-size: 25px;
+  font-weight: bold;
+}
+.Infomation {
+  margin-right: 15px;
+  transition: all 0.5s;
+}
+.button {
+  transition: all 0.5s;
+}
+.button:hover {
+  transform: scale(1.2);
+}
+#header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  opacity: 0.8;
+}
+.Header_Logo {
+  background-image: url("./img/web-logo.png") !important;
+  background-size: cover;
+}

@@ -1,0 +1,12 @@
+.card {
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: auto;
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+.Danger {
+  position: absolute;
+  top: 5px;
+  left: 17%;
+}
